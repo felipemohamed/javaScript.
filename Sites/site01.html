@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <meta>
+       <meta charset="utf-8">
+       <meta name= "author" content="feliepeMohamed">
+       <meta name= "description" content="para expor">
+       <meta name= "keyword" content="htmal5, exemplos">
+       <link  href="css/site01.css" rel="stylesheet">
+      
+    </head>
+    
+    <body>
+
+
+        <div class="banner">
+            <h2> CUIDADO COM O VIRUS</h2>
+            <button class= "fechar__ok">X</button>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est doloribus aliquam cumque dolor
+                 quae dolorem maiores nobis fuga neque quasi dicta assumenda, quos expedita reprehenderit facere 
+                 ratione, magnam ipsum repellendus?
+            </P>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum eum ratione. At maxime temporibus
+                 perferendis tempora aut. Velit distinctio nisi pariatur, aperiam porro libero nihil enim commodi minima
+                 nobis!
+            </p>
+            <hr>
+
+        </div>
+
+       <div class ='principal'>
+        
+             <header class='inicio'>
+                     <nav>
+                         <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contato</a></li>                           
+                            <li><a href="#">Quem sou</a></li>
+                        </ul>
+                    </nav>
+                    <div class="textoprincipal">
+                        <h1>Curso de Web </h1>
+                        <p>Apreda tudo de Front-End</p>
+                        
+                    </div>
+             </header>
+                
+             <main id="principal">
+                    <section class="primeira">
+                        <div class="cardimagem">
+                            <img src="imagens/card_01.png" alt="imagem trata sobre aaa fonte">
+                            <p>Fonte</p>
+                        </div>
+                        <div class="cardimagem">
+                                <img src="imagens/card_02.jpg" alt="imagem trata sobre da possiçãao">
+                                <p>Posicionamento</p>
+                        </div>
+                        <div class="cardimagem">
+                                <img src="imagens/card_03.jpg" alt="imagem trata sobre aaa seleção">
+                                <p>seleção</p>
+                        </div>
+                    </section>
+                    <section class="primeira">
+                        <article>
+                                <header class="título"><h2>Sugestão de Artigos</h2></header>
+                                <p>texto1</p>
+                                <p>texto2</p>
+                        </article>                       
+                    </section>
+             
+                    </div>
+                </main>     
+                <footer class="fim">
+                        <p>Copyright &copy; 2018</p>
+                 </footer>     
+       </div>
+    </body>
+    <script>
+        (function () {
+            var $banner = document.querySelector('.banner');
+            var $fecharbt = document.querySelector('.fechar__ok');
+            $fecharbt.addEventListener('click', fecharBanner);
+            var intervalo= null;
+            function mostrarBanner() {
+                $banner.style.display = 'block';
+                intervalo=setTimeout(fecharBanner,10000);
+
+            }
+            function fecharBanner() {
+               $fecharbt.removeEventListener('click', fecharBanner); 
+               $banner.parentNode.removeChild($banner);
+               clearTimeout(intervalo);
+                
+            }
+            setTimeout(mostrarBanner, 5000);
+            
+            
+
+         })()
+
+    </script>
+   
+</html>
