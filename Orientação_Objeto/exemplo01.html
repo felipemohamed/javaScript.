@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemp01_orientação_object </title>
+</head>
+<body>
+    
+</body>
+<script>
+    // A class em javaScript tem peculariedade específica
+    // podemos observar que pode ser dita com próprio nome class ou função
+    // precisa definir qual é modelo a ser escrrito ES6 OU ES5, respectivamente.
+    // o modelo aseguir é ES5 e vamos construir uma função 
+    
+    function Pessoa(nome, sexo, cpf,ano_nasc){
+        this.nome=nome;
+        this.sexo=sexo;
+        this.cpf=cpf;
+        this.ano_nasc=ano_nasc;
+        this.idade=function(){
+            var d=new Date();
+            var ano_atual= d.getFullYear();
+            return ano_atual-ano_nasc;
+        }
+
+    
+
+    };
+
+
+
+
+</script>
+</html>
