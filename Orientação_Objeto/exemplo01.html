@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemp01_orientação_object </title>
 </head>
 <body>
-    
+<h1 id="teste">  FICHAS </h1>
+    <script>
+        // A class em javaScript tem peculariedade específica
+        // podemos observar que pode ser dita com próprio nome class ou função
+        // precisa definir qual é modelo a ser escrrito ES6 OU ES5, respectivamente.
+        // o modelo aseguir é ES5 e vamos construir uma função 
+        
+        function Aluno(nome, sexo, cpf,ano_nasc){
+            this.nome=nome;
+            this.sexo=sexo;
+            this.cpf=cpf;
+            this.ano_nasc=ano_nasc;
+            this.idade=function(){// esse é métdo, calcula a idade da pessoa
+                var d=new Date();
+                var ano_atual= d.getFullYear();
+                return ano_atual-ano_nasc;
+            }
+
+        };
+        var pessoa1= new Aluno(mohamed, M, 05678700978,1992);
+        var nome=pessoal.nome;
+        var sexo=pessoal.sexo;
+        var cpf=pessoal.cpf;
+        var ano= pessoal.ano_nasc;
+
+        document.writeln();
+        
+        
+
+
+
+    </script>
 </body>
-<script>
-    // A class em javaScript tem peculariedade específica
-    // podemos observar que pode ser dita com próprio nome class ou função
-    // precisa definir qual é modelo a ser escrrito ES6 OU ES5, respectivamente.
-    // o modelo aseguir é ES5 e vamos construir uma função 
-    
-    function Pessoa(nome, sexo, cpf,ano_nasc){
-        this.nome=nome;
-        this.sexo=sexo;
-        this.cpf=cpf;
-        this.ano_nasc=ano_nasc;
-        this.idade=function(){
-            var d=new Date();
-            var ano_atual= d.getFullYear();
-            return ano_atual-ano_nasc;
-        }
 
-    
-
-    };
-
-
-
-
-</script>
 </html>
