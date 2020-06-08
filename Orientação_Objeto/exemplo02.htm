@@ -1,17 +1,32 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
- </head>
- <body>
-     <div class="obs" >
-         <h1>Orientação a objeto</h1>
-     </div>
-     <script>
-          var  minhasStr= "Mohamed";
-     </script>
-
- </body>
- </html>
+<!doctype html>
+<html>
+    <head>
+        <title>orientado a objeto</title>
+        <meta charset="utf-8">
+                
+        
+    </head>
+    <body>
+        <h1>Orientando a objeto</h1>      
+        
+    </body>
+    
+    <script>
+        
+        class Aluno{
+            constructor(nome){
+                this.nome = nome;
+                this._faltas = 0;
+            }
+            
+            adicionarFaltas(){
+                this._faltas++;
+                console.log(` ${this.nome} tem ${this._faltas} faltas`)
+            }
+        }     
+        
+        let aluno1 = new Aluno('Daniel');
+        
+       
+    </script>
+</html>
